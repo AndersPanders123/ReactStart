@@ -1,23 +1,29 @@
-import { useEffect, useState } from 'react'
-import './App.css'
-import VideoList from './VideoList'
+import { useState } from 'react';
 
-function App() {
-  const [count, setCount] = useState(0)
+function Square({ value }: {value:string}) {
 
-  useEffect(() => {
-    console.log("New number:", count)
-  }, [count])
-
-  return (
-    <>
-      <VideoList />
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
-      <p>Current Number: {count}</p>
-    </>
-  )
+  return <div>{value}</div>
 }
 
-export default App
+export default function Board() {
+  const [squares, setSquares] = useState(Array(9).fill(""));
+  return (
+    <>
+      <div className="board-row">
+        <Square value={squares[0]} />
+        <Square value={squares[1]} />
+        <Square value={squares[2]} />
+      </div>
+      <div className="board-row">
+        <Square value={squares[3]} />
+        <Square value={squares[4]} />
+        <Square value={squares[5]} />
+      </div>
+      <div className="board-row">
+        <Square value={squares[6]} />
+        <Square value={squares[7]} />
+        <Square value={squares[8]} />
+      </div>
+    </>
+  );
+}
