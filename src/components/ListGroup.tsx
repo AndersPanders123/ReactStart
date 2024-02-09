@@ -1,16 +1,15 @@
 function ListGroup() {
   let items = ["Hamar", "Kåppang", "Ridabu", "Løten", "stange"];
-  items = [];
-
-  const message = items.length === 0 ? <p>No item found</p> : null;
 
   return (
     <>
       <h1>List</h1>
-      {message}
+      {items.length === 0 && <p>No item Found</p>}
       <ul className="list-group">
         {items.map((item, index) => (
-          <li key={index}>{item}</li>
+          <li className="list-group-item"
+          key={index} onClick={() => console.log("Clicked", {item})}
+          >{item} </li>
         ))}
       </ul>
     </>
