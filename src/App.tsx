@@ -1,12 +1,10 @@
-import ListGroup from "./components/ListGroup";
-import Message from "./components/Message";
+import HeiHei from "./components/HeiHei";
+import './index.css'
 
 function App() {
   return (
     <>
-      <Message />
-      <ListGroup />
-      <ListGroup />
+      <HeiHei />
     </>
   );
 }
