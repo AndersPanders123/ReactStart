@@ -10,3 +10,12 @@
     color: white;
     padding: 25px;
 }
+.row-container {
+    display: flex;
+    align-items: center;
+}
+
+.row-container span {
+    margin-right: 50px;
+    background-color: #ff0000;
+}

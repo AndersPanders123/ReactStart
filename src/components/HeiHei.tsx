@@ -1,10 +1,9 @@
-function HeiHei() {
+const HeiHei = () => {
   return (
-    <>
-      <p className="header">
-        Hjem
-      </p>
-    </>
+    <div className="row-container header">
+     <span>Hjem</span>
+     <span>Anders</span>
+    </div>
   )
 }
 
