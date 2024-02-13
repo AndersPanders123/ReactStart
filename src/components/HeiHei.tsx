@@ -1,6 +1,6 @@
 function HeiHei() {
-    return <p className="header">Heiheo</p>
+  const name = "Anders";
+  return <p className="header">Hei {name}</p>;
 }
-
 
 export default HeiHei;
