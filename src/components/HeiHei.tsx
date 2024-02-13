@@ -1,6 +1,11 @@
 function HeiHei() {
-  const name = "Anders";
-  return <p className="header">Hei {name}</p>;
+  return (
+    <>
+      <p className="header">
+        Hjem
+      </p>
+    </>
+  )
 }
 
 export default HeiHei;
