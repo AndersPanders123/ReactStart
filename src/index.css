@@ -29,8 +29,7 @@ body {
 }
 
 .link:hover {
-    color: green;
-    text-decoration: underline;
+    color: gray;
 }
 
 .lorem {
