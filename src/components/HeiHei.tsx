@@ -10,8 +10,10 @@ const HeiHei = () => {
       <a className="link" href="/Anders">
         Anders
       </a>
-      <div>
-        <img src="../public/LukasAnsikt.png" alt="" />
+      <div className="bilde">
+        <a className="lukas" href="/Lukas">
+          <img src="../public/LukasAnsikt.png" alt="Lukas" />
+        </a>
       </div>
     </div>
   );

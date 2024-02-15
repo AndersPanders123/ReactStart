@@ -39,3 +39,13 @@ body {
 h1 {
     margin: 15px;
 }
+
+.bilde {
+    display: flex;
+    justify-content: center;
+}
+
+.lukas img {
+    max-width: 40px;
+    
+}
