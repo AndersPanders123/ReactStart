@@ -9,8 +9,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./index.css";
 import Hallo from "./Pages/Hallo.tsx";
 import Layout from "./layout/";
-import ListGroup from "./components/ListGroup.tsx";
 
+
+//@ts-ignore
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
@@ -20,8 +21,6 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           <Route path="/hello" element={<Hallo />} />
           <Route path="/Anders" element={<Anders />} />
           <Route path="/Lukas" element={<Lukas />} />
-          {/* Corrected the syntax here */}
-          <Route path="/ListGroup" element={<ListGroup />} />
         </Route>
       </Routes>
     </BrowserRouter>
