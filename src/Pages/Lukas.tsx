@@ -8,6 +8,7 @@ function Lukas() {
         <img src="../public/GrandumusLukas.jpg" alt="" />
         <img src="../public/firkantLukas.jpg" alt="" />
       </div>
+      <div></div>
     </>
   );
 }
