@@ -10,4 +10,4 @@ app.get('/login', (req, res) => {
     res.send('logged inn')
 })
 
-app.listen(3000, () => console.log('jeg hater neger simulerer'))
+app.listen(3000, () => console.log('snhag'))

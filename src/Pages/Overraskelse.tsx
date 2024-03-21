@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import ovn from "../public/ovn.png";
-import ovn2 from "../public/ovn2.png";
+import ovn from "../bilder/ovn.png";
+import ovn2 from "../bilder/ovn2.png";
 
 function Counter() {
   const [counter, setCounter] = useState(0);
   const [img, setImg] = useState(ovn);
 
   const increaseCounter = () => {
+    if (counter >= 310) return;
     setCounter(counter + 10);
   };
 
@@ -25,17 +26,22 @@ function Counter() {
   }, [counter]);
 
   return (
-    <div className="row">
+    <div>
       <div>
-        <button className="button" onClick={increaseCounter}>
-          Increase
-        </button>
-        <button className="button" onClick={decreaseCounter}>
-          Decrease
-        </button>
+        <p>Tempraturen i ovnen er {counter}° grader</p>
       </div>
-      <div>
-        <img src={img} alt="ovn" />
+      <div className="row">
+        <div>
+          <button className="button" onClick={increaseCounter}>
+            Increase
+          </button>
+          <button className="button" onClick={decreaseCounter}>
+            Decrease
+          </button>
+        </div>
+        <div className="bilde">
+          <img className="bildeovn" src={img} alt="ovn" />
+        </div>
       </div>
     </div>
   );

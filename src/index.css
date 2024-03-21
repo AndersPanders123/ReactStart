@@ -81,8 +81,15 @@ h1 {
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 20px;
-    border-radius: 15px;
-    width: 55px;
+    border-radius: 5px;
   }
+
+.button:hover {
+    background-color: black;
+    border-radius: 15px;
+}
+
+.bildeovn {
+    max-width: 350px;
+}
