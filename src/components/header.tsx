@@ -1,4 +1,4 @@
-const HeiHei = () => {
+const header = () => {
   return (
     <div className="row-container header">
       <a className="link" href="/">
@@ -15,9 +15,12 @@ const HeiHei = () => {
           <img src="../public/LukasAnsikt.png" alt="Lukas" />
         </a>
       </div>
+      <a className="link" href="/Overraskelse">
+        Overraskelse
+      </a>
     </div>
   );
 };
 
-export default HeiHei;
+export default header;
 //heihei

@@ -1,4 +1,4 @@
-import HeiHei from "../components/HeiHei";
+import HeiHei from "../components/header";
 import { Outlet } from "react-router-dom";
 
 function Layout() {
