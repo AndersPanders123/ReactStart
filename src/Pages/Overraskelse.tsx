@@ -28,10 +28,10 @@ function Counter() {
   return (
     <div>
       <div>
-        <p>Tempraturen i ovnen er {counter}° grader</p>
+        <p className="temp">Tempraturen i ovnen er {counter}° grader</p>
       </div>
       <div className="row">
-        <div>
+        <div className="sns">
           <button className="button" onClick={increaseCounter}>
             Increase
           </button>

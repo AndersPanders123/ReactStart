@@ -1,9 +1,11 @@
 function Hallo() {
   return (
     <>
-      <h1>Dette er min fine Hallo side</h1>
+      <h1>Hallo</h1>
       <div className="bilde">
-        <img src="../public/hello.png" alt="" />
+        <div>
+          <img className="hallo" src="../public/hello.png" alt="" />
+        </div>
       </div>
     </>
   );
