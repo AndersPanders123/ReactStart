@@ -16,7 +16,7 @@ const header = () => {
         </a>
       </div>
       <a className="link" href="/Overraskelse">
-        Overraskelse
+        Ovn
       </a>
     </div>
   );
